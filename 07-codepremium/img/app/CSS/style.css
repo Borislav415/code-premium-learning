@@ -73,6 +73,9 @@ body {
   font-weight: 400;
   color: #555;
 }
+strong {
+  font-weight: 500;
+}
 /* general css */
 .container {
   /* ширината на елемента и авт. падинг ляво и дясно */
@@ -90,6 +93,7 @@ body {
 }
 .grid--three-cols {
   grid-template-columns: repeat(3, 1fr);
+  padding-left: 2.8rem;
 }
 .customers-box {
   margin-top: 8rem;
@@ -319,5 +323,105 @@ body {
   background-color: yellowgreen;
 }
 .test1:nth-child(4) {
-  background-color: green;
+  background-color: green;  
 } */
+/*!!!project-section !!!*/
+.section-project {
+  padding-bottom: 9.6rem;
+}
+.project {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.07);
+  border-radius: 11px;
+  /* заоблини ъгли понеже контейнера е препълнен */
+  overflow: hidden;
+  /* card 0.3s */
+  transition: all 0.3s;
+}
+/* !!!Efect Up and Down!!! card */
+.project:hover {
+  /* transform: translate(0rem -2rem); */
+  transform: translateY(-1.2rem);
+}
+.project-content {
+  padding: 3.2rem 3.8rem;
+}
+.project-strong {
+  color: #004aad;
+}
+.project-img {
+  width: 100%;
+}
+
+.project-heading {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+  padding-left: 1.4rem;
+}
+.project-data {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* font-size: 1.8rem; */
+  padding-left: 1.2rem;
+}
+
+.project-detail {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+.project-tags {
+  margin-bottom: 1.2rem;
+}
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  padding-left: 1.4rem;
+  font-size: 1.2rem;
+  background-color: #59e00a;
+  font-weight: 600;
+  color: #333;
+  border-radius: 9px;
+  margin-left: 1.2rem;
+}
+.tag--project {
+  background-color: #eabe1e;
+}
+.project-icon {
+  color: #004aad;
+  height: 2.4rem;
+  width: 2.4rem;
+  /* fill:#004aad;
+stroke: #004aad; */
+}
+.list {
+  list-style: none;
+  display: flex;
+  /* подрежда елементите в колона */
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #004aad;
+}
+.list-item span {
+  font-size: 1.8rem;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.all-projects {
+  text-align: center;
+  font-size: 1.8rem;
+}

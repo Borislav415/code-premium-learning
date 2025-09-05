@@ -107,7 +107,7 @@ body {
 .customer-images-box img:last-child {
   margin-right: 0;
 }
-.customers-expirience {
+.customers-experience {
   font-size: 1.6rem;
   font-weight: 600;
 }
@@ -190,7 +190,24 @@ body {
   /* добавя рамка от вътрешната страна */
   box-shadow: inset 0 0 0 3px #fff;
 }
+.link:link,
+.link:visited {
+  color: #004aad;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  display: inline-block;
+  padding: 2px;
+  transition: all 0.3s;
+}
+.link:hover,
+.link:active {
+  color: #00439c;
+  border-bottom: 1px solid transparent;
+}
 .margin-right-sm {
   /* има най-висок приоритет */
   margin-right: 1.6rem !important;
+}
+.text-align-centar {
+  text-align: center;
 }
