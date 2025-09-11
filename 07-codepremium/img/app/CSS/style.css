@@ -85,7 +85,6 @@ strong {
 .grid {
   display: grid;
   gap: 9.6rem;
-  grid-template-columns: repeat(2, 1fr);
 }
 .grid--two-cols {
   grid-template-columns: repeat(2, 1fr);
@@ -139,7 +138,7 @@ strong {
 }
 
 .heading-secondary {
-  font-size: 4.4rem;
+  font-size: 4.3rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
   padding-left: 3.2rem;
@@ -398,26 +397,7 @@ strong {
   /* fill:#004aad;
 stroke: #004aad; */
 }
-.list {
-  list-style: none;
-  display: flex;
-  /* подрежда елементите в колона */
-  flex-direction: column;
-  gap: 1.6rem;
-}
-.list-icon {
-  width: 3rem;
-  height: 3rem;
-  color: #004aad;
-}
-.list-item span {
-  font-size: 1.8rem;
-}
-.list-item {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-}
+
 .margin-bottom-md {
   margin-bottom: 4.8rem !important;
 }
@@ -451,7 +431,7 @@ stroke: #004aad; */
   color: #777;
 }
 .testimonial-name {
-  color: #777;
+  color: #6f6f6f;
   font-size: 1.6rem;
 }
 .testimonials-gallery {
@@ -461,13 +441,86 @@ stroke: #004aad; */
   transition: all 0.3s;
 }
 
-.testimonials-gallery img {
+.gallery-image {
   width: 100%;
   display: block;
 }
-.testimonials-gallery img:hover {
+.gallery-image:hover {
+  /* efect image */
   transform: scale(1.1);
 }
 .gallery-item {
+  /* only zoom picture not border of the pic. */
   overflow: hidden;
+}
+
+/* !!!section-pricing!!! */
+.section-pricing {
+  padding: 9.6rem 0;
+}
+.pricing-heading {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.pricing-plan {
+  border-radius: 11px;
+  padding: 4.8rem;
+  width: 75%;
+  justify-self: end;
+}
+/* The Cards is the position on ceter */
+.pricing-plan:last-child {
+  justify-self: start;
+}
+.pricing-plan--premium {
+  background-color: #e6edf7;
+  position: relative;
+  /* скрива излишното и винаги на родителския елемент*/
+  overflow: hidden;
+}
+.pricing-plan--starter {
+  border: 2px solid #e6edf7;
+  padding: 4.6rem;
+}
+/* дъщерния елемент под 45 градуса */
+.pricing-plan--premium::after {
+  content: "Best Value";
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  top: 2.9rem;
+  right: -3.2rem;
+  background-color: #ffd43b;
+  padding: 0.8rem 3.2rem;
+  color: #333;
+  transform: rotate(45deg);
+}
+.plan-name {
+  color: #004aad;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2.4rem;
+}
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: #6f6f6f;
+}
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
 }
