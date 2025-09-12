@@ -100,6 +100,7 @@ body {
 }
 .grid--four-cols {
   grid-template-columns: repeat(4, 1fr);
+  padding-left: 1.8rem;
 }
 .customers-box {
   margin-top: 8rem;
