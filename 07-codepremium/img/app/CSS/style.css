@@ -63,6 +63,10 @@ Medium: 11px
   margin: 0;
   box-sizing: border-box;
 }
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(0, 74, 173, 0.05);
+}
 /* това е процента за единица рем */
 html {
   font-size: 62.5%;
@@ -157,6 +161,7 @@ strong {
   padding-left: 3.2rem;
 }
 /* С-во наследяване */
+.btn,
 .btn:link,
 .btn:visited {
   font-size: 2rem;
@@ -169,6 +174,7 @@ strong {
   font-weight: 600;
 }
 /* използване на псевдо класове */
+
 .btn-full:link,
 .btn-full:visited {
   color: #fff;
@@ -548,4 +554,95 @@ stroke: #004aad; */
   font-size: 1.8rem;
   line-height: 1.8;
   color: #6f6f6f;
+}
+/* !!!Section-CTA!!! */
+.section-cta {
+  padding: 9.6rem 0;
+}
+.container-cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #004aad; */
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(0, 75, 173, 0.911),
+    #0079b9
+  );
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.015);
+  /* height: 50rem; */
+  border-radius: 11px;
+  margin-left: 1.8rem;
+  margin-right: 1.8rem;
+  overflow: hidden;
+}
+.cta-image-box {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 75, 173, 0.25),
+      rgba(0, 120, 185, 0.25)
+    ),
+    url("/07-codepremium/img/appointment.png");
+  background-size: cover;
+}
+.cta-text-box {
+  color: #001634;
+  padding: 4.8rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+.cta-text-box .heading-secondary {
+  /* color: #001634; */
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+.cta-form label {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #e6edf7;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01);
+}
+#select-where {
+  padding: 2.2rem 1.6rem;
+}
+.cta-form::placeholder {
+  color: #888;
+}
+.cta-form button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: #001634;
+  color: #fff;
+  align-self: end;
+  padding: 1.2rem 1.6rem;
+}
+.cta-form button:hover {
+  background-color: #fff;
+  color: #001634;
+}
+.cta-form input:focus,
+.cta-form select:focus,
+.cta-form button:focus {
+  box-shadow: 0 0 0 0.8rem rgba(230, 237, 247, 0.05);
 }
