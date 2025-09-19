@@ -65,7 +65,7 @@ Medium: 11px
 }
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.8rem rgba(0, 74, 173, 0.05);
+  box-shadow: 0 0 0 0.8rem rgba(0, 74, 173, 0.5);
 }
 /* това е процента за единица рем */
 html {
@@ -417,6 +417,8 @@ stroke: #004aad; */
   background-color: #e6edf7;
   display: grid;
   grid-template-columns: 55fr 45fr;
+  margin-right: 2.4rem;
+  margin-left: 2.4rem;
 }
 .testimonials {
   display: grid;
@@ -557,7 +559,7 @@ stroke: #004aad; */
 }
 /* !!!Section-CTA!!! */
 .section-cta {
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 12.8rem 0;
 }
 .container-cta {
   display: grid;
@@ -623,7 +625,7 @@ stroke: #004aad; */
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01);
 }
 #select-where {
-  padding: 2.2rem 1.6rem;
+  padding: 1.8rem 1.6rem;
 }
 .cta-form::placeholder {
   color: #888;
@@ -635,7 +637,7 @@ stroke: #004aad; */
   background-color: #001634;
   color: #fff;
   align-self: end;
-  padding: 1.2rem 1.6rem;
+  padding: 0.8rem 1.6rem;
 }
 .cta-form button:hover {
   background-color: #fff;
@@ -644,5 +646,72 @@ stroke: #004aad; */
 .cta-form input:focus,
 .cta-form select:focus,
 .cta-form button:focus {
-  box-shadow: 0 0 0 0.8rem rgba(230, 237, 247, 0.05);
+  box-shadow: 0 0 0 0.8rem rgba(230, 237, 247, 0.5);
+}
+
+/* !!! footer !!!*/
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+  margin-left: 2.4rem;
+}
+.social-links {
+  display: flex;
+  gap: 2.4rem;
+  list-style-type: none;
+}
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-left: 2.4rem;
+}
+.copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6;
+  margin-left: 2.4rem;
+  margin-top: auto;
+}
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 1.4rem;
+}
+.footer-Logo {
+  height: 2.4rem;
+}
+.footer-heading {
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-bottom: 3.2rem;
+}
+.footer-navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+  line-height: 1.6;
+}
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
 }
