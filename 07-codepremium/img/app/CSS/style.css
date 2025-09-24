@@ -116,7 +116,7 @@ strong {
   margin-right: 0;
 }
 .customers-expirience {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 .customers-expirience span {
@@ -419,6 +419,8 @@ stroke: #004aad; */
   grid-template-columns: 55fr 45fr;
   margin-right: 2.4rem;
   margin-left: 2.4rem;
+  align-items: center;
+  border-radius: 11px;
 }
 .testimonials {
   display: grid;
