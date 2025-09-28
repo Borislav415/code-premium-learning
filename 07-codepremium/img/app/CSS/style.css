@@ -70,6 +70,7 @@ Medium: 11px
 /* това е процента за единица рем */
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Rubik", sans-serif;

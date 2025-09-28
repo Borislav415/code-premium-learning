@@ -39,7 +39,7 @@
     padding: 9.6rem 3.2rem;
   }
 }
-/* bellow 1200px - tablet*/
+/* bellow 944px - tablet*/
 @media (max-width: 59em) {
   html {
     font-size: 50%;
@@ -126,5 +126,29 @@
   .nav-list .nav-link:link,
   .nav-list .nav-link:visited {
     font-size: 3rem;
+  }
+}
+/* bellow 704px*/
+@media (max-width: 44em) {
+  html .grid--three-cols,
+  .grid--four-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .items-needed {
+    grid-column: 1/-1;
+    justify-self: center;
+    column-gap: 3.2rem;
+  }
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+  .grid {
+    column-gap: 3.2rem;
+  }
+  .pricing-plan {
+    width: 100%;
+  }
+  .grid--footer {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
