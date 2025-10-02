@@ -152,3 +152,61 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+/* bellow 544px */
+@media (max-width: 34em) {
+  .grid--two-cols,
+  .grid--three-cols,
+  .grid--four-cols {
+    grid-template-columns: 1fr;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+  #grid_3 {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .hero-img {
+    width: 90%;
+  }
+  .img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-image-box {
+    grid-row: 1;
+    height: 32rem;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+  .container-cta {
+    grid-template-columns: 1fr;
+  }
+  .grid--footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logo-col {
+    grid-column: 1/-1;
+  }
+}

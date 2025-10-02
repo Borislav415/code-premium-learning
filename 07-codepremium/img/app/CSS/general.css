@@ -95,7 +95,9 @@ body {
 .grid--two-cols {
   grid-template-columns: repeat(2, 1fr);
 }
-.grid--three-cols {
+.container-grid,
+.grid--three-cols,
+.margin-bottom-md {
   grid-template-columns: repeat(3, 1fr);
 }
 .grid--four-cols {

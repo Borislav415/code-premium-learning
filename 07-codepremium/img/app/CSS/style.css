@@ -59,680 +59,692 @@ Medium: 11px
 */
 /* General css */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
 }
 *:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.8rem rgba(0, 74, 173, 0.5);
+outline: none;
+box-shadow: 0 0 0 0.8rem rgba(0, 74, 173, 0.5);
 }
 /* това е процента за единица рем */
 html {
-  font-size: 62.5%;
+font-size: 62.5%;
+overflow-x: hidden;
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Rubik", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
+font-family: "Rubik", sans-serif;
+line-height: 1;
+font-weight: 400;
+color: #555;
+overflow-x: hidden;
 }
 strong {
-  font-weight: 500;
+font-weight: 500;
 }
 /* general css */
 .container {
-  /* ширината на елемента и авт. падинг ляво и дясно */
-  max-width: 120rem;
-  padding-inline: auto;
+/* ширината на елемента и авт. падинг ляво и дясно */
+max-width: 120rem;
+padding-inline: auto;
 }
 .grid {
-  display: grid;
-  gap: 9.6rem;
+display: grid;
+gap: 9.6rem;
 }
 .grid--two-cols {
-  grid-template-columns: repeat(2, 1fr);
-  padding: 3.2rem;
+grid-template-columns: repeat(2, 1fr);
+padding: 3.2rem;
 }
 .grid--three-cols {
-  grid-template-columns: repeat(3, 1fr);
-  padding-left: 2.8rem;
+grid-template-columns: repeat(3, 1fr);
+padding-left: 2.8rem;
 }
 .customers-box {
-  margin-top: 8rem;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
+margin-top: 8rem;
+display: flex;
+align-items: center;
+gap: 0.4rem;
 }
 /* използваме наследствения селектор "img" */
 .customer-images-box img {
-  height: 2.8rem;
-  width: 2.8rem;
-  border-radius: 50%;
-  margin-right: -1.2rem;
-  border: 3px solid #e6edf7;
+height: 2.8rem;
+width: 2.8rem;
+border-radius: 50%;
+margin-right: -1.2rem;
+border: 3px solid #e6edf7;
 }
 .customer-images-box img:last-child {
-  margin-right: 0;
+margin-right: 0;
 }
 .customers-expirience {
-  font-size: 1.4rem;
-  font-weight: 600;
+font-size: 1.4rem;
+font-weight: 600;
 }
 .customers-expirience span {
-  color: #00439c;
+color: #00439c;
 }
 .heading-primary,
 .heading-secondary {
-  font-weight: 700;
-  color: #333;
-  letter-spacing: -0.5px;
+font-weight: 700;
+color: #333;
+letter-spacing: -0.5px;
 }
 .heading-primary {
-  font-size: 5.2rem;
-  line-height: 1.05;
-  margin-bottom: 3.2rem;
+font-size: 5.2rem;
+line-height: 1.05;
+margin-bottom: 3.2rem;
 }
 
 .hero-description {
-  font-size: 2rem;
-  line-height: 1.6;
-  letter-spacing: -0.5px;
-  margin-bottom: 4.8rem;
+font-size: 2rem;
+line-height: 1.6;
+letter-spacing: -0.5px;
+margin-bottom: 4.8rem;
 }
 
 .heading-secondary {
-  font-size: 4.3rem;
-  line-height: 1.2;
-  margin-bottom: 9.6rem;
-  padding-left: 3.2rem;
+font-size: 4.3rem;
+line-height: 1.2;
+margin-bottom: 9.6rem;
+padding-left: 3.2rem;
 }
 .heading-tertiary {
 }
 .subheading {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #004aad;
-  /* прави буквите главни */
-  text-transform: uppercase;
-  letter-spacing: 0.75px;
-  margin-bottom: 1.6rem;
-  padding-left: 3.2rem;
+display: block;
+font-size: 1.6rem;
+font-weight: 500;
+color: #004aad;
+/* прави буквите главни */
+text-transform: uppercase;
+letter-spacing: 0.75px;
+margin-bottom: 1.6rem;
+padding-left: 3.2rem;
 }
 /* С-во наследяване */
 .btn,
 .btn:link,
 .btn:visited {
-  font-size: 2rem;
-  display: inline-block;
-  padding: 1.6rem 3.2rem;
-  border-radius: 9px;
-  text-decoration: none;
-  /* к-а за анимация  */
-  transition: all 0.3s;
-  font-weight: 600;
+font-size: 2rem;
+display: inline-block;
+padding: 1.6rem 3.2rem;
+border-radius: 9px;
+text-decoration: none;
+/* к-а за анимация  */
+transition: all 0.3s;
+font-weight: 600;
 }
 /* използване на псевдо класове */
 
 .btn-full:link,
 .btn-full:visited {
-  color: #fff;
-  background-color: #004aad;
+color: #fff;
+background-color: #004aad;
 }
 .btn-full:hover,
 .btn-full:active {
-  color: #fff;
-  background-color: #00439c;
+color: #fff;
+background-color: #00439c;
 }
 .btn-outline:link,
 .btn-outline:visited {
-  background-color: #fff;
-  color: #555;
+background-color: #fff;
+color: #555;
 }
 .btn-outline:hover,
 .btn-outline:active {
-  background-color: #e6edf7;
-  /* добавя рамка от вън. страна на бутона */
-  /* border: 6px solid #fff; */
-  /* добавя рамка от вътрешната страна */
-  box-shadow: inset 0 0 0 3px #fff;
+background-color: #e6edf7;
+/* добавя рамка от вън. страна на бутона */
+/* border: 6px solid #fff; */
+/* добавя рамка от вътрешната страна */
+box-shadow: inset 0 0 0 3px #fff;
 }
 .margin-right-sm {
-  /* има най-висок приоритет */
-  margin-right: 1.6rem !important;
+/* има най-висок приоритет */
+margin-right: 1.6rem !important;
 }
 /* Navigation */
 .header {
-  display: flex;
-  /* разадалечава ме ги от единия край на другия */
-  justify-content: space-between;
-  align-items: center;
-  background-color: #e6edf7;
-  /* фиксирана височина на елемента и за скриване */
-  height: 9.6rem;
-  padding: 0 4.8rem;
+display: flex;
+/* разадалечава ме ги от единия край на другия */
+justify-content: space-between;
+align-items: center;
+background-color: #e6edf7;
+/* фиксирана височина на елемента и за скриване */
+height: 9.6rem;
+padding: 0 4.8rem;
 }
 .Logo {
-  height: 2.4rem;
+height: 2.4rem;
 }
 .nav-list {
-  display: flex;
-  gap: 2.8rem;
-  align-items: center;
+display: flex;
+gap: 2.8rem;
+align-items: center;
 }
 .nav-list li {
-  /* Премахва точките */
-  list-style: none;
+/* Премахва точките */
+list-style: none;
 }
 .nav-list .nav-link:link,
 .nav-list .nav-link:visited {
-  /* премахва подчертаването */
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.8rem;
-  color: #333;
-  transition: all 0.3s;
+/* премахва подчертаването */
+text-decoration: none;
+font-weight: 500;
+font-size: 1.8rem;
+color: #333;
+transition: all 0.3s;
 }
 .nav-list .nav-link:hover,
 .nav-list .nav-link:active {
-  color: #004aad;
+color: #004aad;
 }
 /* !!!nav list родителския елемент!!! */
 .nav-list .nav-link-cta:link,
 .nav-list .nav-link-cta:visited {
-  display: inline-block;
-  padding: 1.6rem 3.2rem;
-  background-color: #004aad;
-  color: #fff;
-  border-radius: 9px;
+display: inline-block;
+padding: 1.6rem 3.2rem;
+background-color: #004aad;
+color: #fff;
+border-radius: 9px;
 }
 .btn-mobile-nav {
-  border: none;
-  background-color: none;
-  cursor: pointer;
-  display: none;
+border: none;
+background-color: none;
+cursor: pointer;
+display: none;
 }
 .icon-mobile-nav {
-  width: 4.8rem;
-  height: 4.8rem;
-  color: #333;
+width: 4.8rem;
+height: 4.8rem;
+color: #333;
 }
 .icon-mobile-nav[name="close-outline"] {
-  display: none;
+display: none;
 }
-
+.sticky .header{
+position: fixed;
+top: 0;
+bottom: 0;
+width: 100%;
+height: 8rem;
+padding-block: 0;
+background-color: rgba(255, 255, 255, 0.9);
+z-index: 999;
+box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
 /* Section-Hero */
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  background-color: #e6edf7;
-  max-width: 126rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+background-color: #e6edf7;
+max-width: 126rem;
 
-  /* margin-inline: auto; */
-  /* margin: 0 auto; */
-  gap: 7.8rem;
-  padding: 3.2rem;
+/* margin-inline: auto; */
+/* margin: 0 auto; */
+gap: 7.8rem;
+padding: 3.2rem;
 }
 .hero-img {
-  width: 100%;
-  /* padding-left: 20.2rem; */
+width: 100%;
+/* padding-left: 20.2rem; */
 }
 .section-hero {
-  background-color: #e6edf7;
-  padding: 4.8rem 0 9.6rem 0;
-  max-width: 130rem;
+background-color: #e6edf7;
+padding: 4.8rem 0 9.6rem 0;
+max-width: 130rem;
 }
 /* General CSS */
 /* размера, дебелината и височината м/у редовете */
 
 /* !!!section-how!!! */
 .section-how {
-  padding: 9.6rem 0;
+padding: 9.6rem 0;
 }
 .step-image {
-  width: 40%;
+width: 40%;
 }
 .img-box {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .step-number {
-  font-size: 8.6rem;
-  font-weight: 600;
-  color: #ddd;
-  margin-bottom: 1.2rem;
+font-size: 8.6rem;
+font-weight: 600;
+color: #ddd;
+margin-bottom: 1.2rem;
 }
 .step-description {
-  font-size: 1.8rem;
-  line-height: 1.6;
+font-size: 1.8rem;
+line-height: 1.6;
 }
 .img-box::before {
-  /* за да се появи content: " " */
-  content: "";
-  display: block;
-  width: 70%;
-  background-color: #e6edf7;
-  padding-bottom: 70%;
-  border-radius: 50%;
-  position: absolute;
-  z-index: -2;
+/* за да се появи content: " " */
+content: "";
+display: block;
+width: 70%;
+background-color: #e6edf7;
+padding-bottom: 70%;
+border-radius: 50%;
+position: absolute;
+z-index: -2;
 }
 .img-box::after {
-  /* за да се появи content: " " */
-  content: "";
-  display: block;
-  width: 55%;
-  background-color: #ccdbef;
-  padding-bottom: 55%;
-  border-radius: 50%;
-  position: absolute;
-  z-index: -1;
+/* за да се появи content: " " */
+content: "";
+display: block;
+width: 55%;
+background-color: #ccdbef;
+padding-bottom: 55%;
+border-radius: 50%;
+position: absolute;
+z-index: -1;
 }
 /* .test1:nth-child(1) {
-  background-color: red;
+ background-color: red;
 }
 .test1:nth-child(2) {
-  background-color: blue;
+ background-color: blue;
 }
 .test1:nth-child(3) {
-  background-color: yellowgreen;
+ background-color: yellowgreen;
 }
 .test1:nth-child(4) {
-  background-color: green;  
+ background-color: green;  
 } */
 /*!!!project-section !!!*/
 .section-project {
-  padding-bottom: 9.6rem;
+padding-bottom: 9.6rem;
 }
 .project {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.07);
-  border-radius: 11px;
-  /* заоблини ъгли понеже контейнера е препълнен */
-  overflow: hidden;
-  /* card 0.3s */
-  transition: all 0.3s;
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.07);
+border-radius: 11px;
+/* заоблини ъгли понеже контейнера е препълнен */
+overflow: hidden;
+/* card 0.3s */
+transition: all 0.3s;
 }
 /* !!!Efect Up and Down!!! card */
 .project:hover {
-  /* transform: translate(0rem -2rem); */
-  transform: translateY(-1.2rem);
+/* transform: translate(0rem -2rem); */
+transform: translateY(-1.2rem);
 }
 .project-content {
-  padding: 3.2rem 3.8rem;
+padding: 3.2rem 3.8rem;
 }
 .project-strong {
-  color: #004aad;
+color: #004aad;
 }
 .project-img {
-  width: 100%;
+width: 100%;
 }
 
 .project-heading {
-  font-size: 2.4rem;
-  color: #333;
-  font-weight: 600;
-  margin-bottom: 3.2rem;
-  padding-left: 1.4rem;
+font-size: 2.4rem;
+color: #333;
+font-weight: 600;
+margin-bottom: 3.2rem;
+padding-left: 1.4rem;
 }
 .project-data {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  /* font-size: 1.8rem; */
-  padding-left: 1.2rem;
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+/* font-size: 1.8rem; */
+padding-left: 1.2rem;
 }
 
 .project-detail {
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 1.1rem;
+font-size: 1.5rem;
+display: flex;
+align-items: center;
+gap: 1.1rem;
 }
 .project-tags {
-  margin-bottom: 1.2rem;
+margin-bottom: 1.2rem;
 }
 .project-detail-data {
-  line-height: 1.6;
+line-height: 1.6;
 }
 .tag {
-  display: inline-block;
-  padding: 0.4rem 0.8rem;
-  padding-left: 1.4rem;
-  font-size: 1.2rem;
-  background-color: #59e00a;
-  font-weight: 600;
-  color: #333;
-  border-radius: 9px;
-  margin-left: 1.2rem;
+display: inline-block;
+padding: 0.4rem 0.8rem;
+padding-left: 1.4rem;
+font-size: 1.2rem;
+background-color: #59e00a;
+font-weight: 600;
+color: #333;
+border-radius: 9px;
+margin-left: 1.2rem;
 }
 .tag--project {
-  background-color: #eabe1e;
+background-color: #eabe1e;
 }
 .project-icon {
-  color: #004aad;
-  height: 2.4rem;
-  width: 2.4rem;
-  /* fill:#004aad;
+color: #004aad;
+height: 2.4rem;
+width: 2.4rem;
+/* fill:#004aad;
 stroke: #004aad; */
 }
 
 .margin-bottom-md {
-  margin-bottom: 4.8rem !important;
+margin-bottom: 4.8rem !important;
 }
 .all-projects {
-  text-align: center;
-  font-size: 1.8rem;
+text-align: center;
+font-size: 1.8rem;
 }
 /* section testimonials */
 .section-testimonials {
-  padding: 9.6rem 0;
-  background-color: #e6edf7;
-  display: grid;
-  grid-template-columns: 55fr 45fr;
-  margin-right: 2.4rem;
-  margin-left: 2.4rem;
-  align-items: center;
-  border-radius: 11px;
+padding: 9.6rem 0;
+background-color: #e6edf7;
+display: grid;
+grid-template-columns: 55fr 45fr;
+margin-right: 2.4rem;
+margin-left: 2.4rem;
+align-items: center;
+border-radius: 11px;
 }
 .testimonials {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3.8rem;
-  padding-right: 2.4rem;
-  padding-left: 2.4rem;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 3.8rem;
+padding-right: 2.4rem;
+padding-left: 2.4rem;
 }
 .testimonial-image {
-  width: 6.4rem;
-  border-radius: 50%;
-  margin-bottom: 1.2rem;
+width: 6.4rem;
+border-radius: 50%;
+margin-bottom: 1.2rem;
 }
 .testimonial-text {
-  font-size: 1.6rem;
-  line-height: 1.8;
-  margin-bottom: 1.6rem;
-  color: #777;
+font-size: 1.6rem;
+line-height: 1.8;
+margin-bottom: 1.6rem;
+color: #777;
 }
 .testimonial-name {
-  color: #6f6f6f;
-  font-size: 1.6rem;
+color: #6f6f6f;
+font-size: 1.6rem;
 }
 .testimonials-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem; /* разстояние между снимките */
-  transition: all 0.3s;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1.2rem; /* разстояние между снимките */
+transition: all 0.3s;
 }
 
 .gallery-image {
-  width: 100%;
-  display: block;
+width: 100%;
+display: block;
 }
 .gallery-image:hover {
-  /* efect image */
-  transform: scale(1.1);
+/* efect image */
+transform: scale(1.1);
 }
 .gallery-item {
-  /* only zoom picture not border of the pic. */
-  overflow: hidden;
+/* only zoom picture not border of the pic. */
+overflow: hidden;
 }
 
 /* !!!section-pricing!!! */
 .section-pricing {
-  padding: 9.6rem 0;
+padding: 9.6rem 0;
 }
 .pricing-heading {
-  text-align: center;
-  margin-bottom: 4.8rem;
+text-align: center;
+margin-bottom: 4.8rem;
 }
 .pricing-plan {
-  border-radius: 11px;
-  padding: 4.8rem;
-  width: 75%;
-  justify-self: end;
+border-radius: 11px;
+padding: 4.8rem;
+width: 75%;
+justify-self: end;
 }
 /* The Cards is the position on ceter */
 .pricing-plan:last-child {
-  justify-self: start;
+justify-self: start;
 }
 .pricing-plan--premium {
-  background-color: #e6edf7;
-  position: relative;
-  /* скрива излишното и винаги на родителския елемент*/
-  overflow: hidden;
+background-color: #e6edf7;
+position: relative;
+/* скрива излишното и винаги на родителския елемент*/
+overflow: hidden;
 }
 .pricing-plan--starter {
-  border: 2px solid #e6edf7;
-  padding: 4.6rem;
+border: 2px solid #e6edf7;
+padding: 4.6rem;
 }
 /* дъщерния елемент под 45 градуса */
 .pricing-plan--premium::after {
-  content: "Best Value";
-  position: absolute;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: 700;
-  top: 2.9rem;
-  right: -3.2rem;
-  background-color: #ffd43b;
-  padding: 0.8rem 3.2rem;
-  color: #333;
-  transform: rotate(45deg);
+content: "Best Value";
+position: absolute;
+text-transform: uppercase;
+font-size: 1.4rem;
+font-weight: 700;
+top: 2.9rem;
+right: -3.2rem;
+background-color: #ffd43b;
+padding: 0.8rem 3.2rem;
+color: #333;
+transform: rotate(45deg);
 }
 .plan-name {
-  color: #004aad;
-  font-weight: 600;
-  font-size: 2rem;
-  letter-spacing: 0.75px;
-  text-transform: uppercase;
-  margin-bottom: 3.2rem;
+color: #004aad;
+font-weight: 600;
+font-size: 2rem;
+letter-spacing: 0.75px;
+text-transform: uppercase;
+margin-bottom: 3.2rem;
 }
 .plan-price {
-  font-size: 6.2rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 2.4rem;
+font-size: 6.2rem;
+font-weight: 600;
+color: #333;
+margin-bottom: 2.4rem;
 }
 .plan-price span {
-  font-size: 3rem;
-  font-weight: 500;
-  margin-right: 0.8rem;
+font-size: 3rem;
+font-weight: 500;
+margin-right: 0.8rem;
 }
 .plan-text {
-  font-size: 1.6rem;
-  line-height: 1.6rem;
-  color: #6f6f6f;
+font-size: 1.6rem;
+line-height: 1.6rem;
+color: #6f6f6f;
 }
 .plan-sign-up {
-  text-align: center;
-  margin-top: 4.8rem;
+text-align: center;
+margin-top: 4.8rem;
 }
 .plan-details {
-  font-size: 1.6rem;
-  line-height: 1.6;
-  text-align: center;
+font-size: 1.6rem;
+line-height: 1.6;
+text-align: center;
 }
 .feature-icon {
-  height: 2.8rem;
-  width: 2.8rem;
-  color: #004aad;
-  margin-bottom: 3.2rem;
-  padding: 1.6rem;
-  border-radius: 50%;
-  background-color: #e6edf7;
+height: 2.8rem;
+width: 2.8rem;
+color: #004aad;
+margin-bottom: 3.2rem;
+padding: 1.6rem;
+border-radius: 50%;
+background-color: #e6edf7;
 }
 .feature-heading {
-  font-size: 2.4rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 1.6rem;
+font-size: 2.4rem;
+font-weight: 600;
+color: #333;
+margin-bottom: 1.6rem;
 }
 .feature-text {
-  font-size: 1.8rem;
-  line-height: 1.8;
-  color: #6f6f6f;
+font-size: 1.8rem;
+line-height: 1.8;
+color: #6f6f6f;
 }
 /* !!!Section-CTA!!! */
 .section-cta {
-  padding: 9.6rem 0 12.8rem 0;
+padding: 9.6rem 0 12.8rem 0;
 }
 .container-cta {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  /* background-color: #004aad; */
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(0, 75, 173, 0.911),
-    #0079b9
-  );
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.015);
-  /* height: 50rem; */
-  border-radius: 11px;
-  margin: 0 3.6rem;
-  padding: 0;
-  overflow: hidden;
+display: grid;
+grid-template-columns: 2fr 1fr;
+/* background-color: #004aad; */
+background-image: linear-gradient(
+to right bottom,
+rgba(0, 75, 173, 0.911),
+#0079b9
+);
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.015);
+/* height: 50rem; */
+border-radius: 11px;
+margin: 0 3.6rem;
+padding: 0;
+overflow: hidden;
 }
 .cta-image-box {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 75, 173, 0.25),
-      rgba(0, 120, 185, 0.25)
-    ),
-    url("/07-codepremium/img/appointment.png");
-  background-size: cover;
-  background-position: center;
+background-image: linear-gradient(
+to bottom,
+rgba(0, 75, 173, 0.25),
+rgba(0, 120, 185, 0.25)
+),
+url("/07-codepremium/img/appointment.png");
+background-size: cover;
+background-position: center;
 }
 .cta-text-box {
-  color: #001634;
-  padding: 4.8rem;
+color: #001634;
+padding: 4.8rem;
 }
 .cta-text {
-  font-size: 1.8rem;
-  line-height: 1.8;
-  margin-bottom: 4.8rem;
+font-size: 1.8rem;
+line-height: 1.8;
+margin-bottom: 4.8rem;
 }
 .cta-form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 3.2rem;
-  row-gap: 2.4rem;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+column-gap: 3.2rem;
+row-gap: 2.4rem;
 }
 .cta-text-box .heading-secondary {
-  /* color: #001634; */
-  color: inherit;
-  margin-bottom: 3.2rem;
+/* color: #001634; */
+color: inherit;
+margin-bottom: 3.2rem;
 }
 .cta-form label {
-  display: block;
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-bottom: 1.2rem;
+display: block;
+font-size: 1.8rem;
+font-weight: 500;
+margin-bottom: 1.2rem;
 }
 .cta-form input,
 .cta-form select {
-  width: 100%;
-  padding: 1.2rem 1.6rem;
-  font-size: 1.6rem;
-  font-family: inherit;
-  color: inherit;
-  border: none;
-  background-color: #e6edf7;
-  border-radius: 9px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01);
+width: 100%;
+padding: 1.2rem 1.6rem;
+font-size: 1.6rem;
+font-family: inherit;
+color: inherit;
+border: none;
+background-color: #e6edf7;
+border-radius: 9px;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01);
 }
 #select-where {
-  padding: 1.8rem 1.6rem;
+padding: 1.8rem 1.6rem;
 }
 .cta-form::placeholder {
-  color: #888;
+color: #888;
 }
 .cta-form button {
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  background-color: #001634;
-  color: #fff;
-  align-self: end;
-  padding: 0.8rem 1.6rem;
+border: none;
+cursor: pointer;
+font-family: inherit;
+background-color: #001634;
+color: #fff;
+align-self: end;
+padding: 0.8rem 1.6rem;
 }
 .cta-form button:hover {
-  background-color: #fff;
-  color: #001634;
+background-color: #fff;
+color: #001634;
 }
 .cta-form input:focus,
 .cta-form select:focus,
 .cta-form button:focus {
-  box-shadow: 0 0 0 0.8rem rgba(230, 237, 247, 0.5);
+box-shadow: 0 0 0 0.8rem rgba(230, 237, 247, 0.5);
 }
 
 /* !!! footer !!!*/
 .footer {
-  padding: 12.8rem 0;
-  border-top: 1px solid #eee;
+padding: 12.8rem 0;
+border-top: 1px solid #eee;
 }
 .grid--footer {
-  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 .logo-col {
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 .footer-logo {
-  display: block;
-  margin-bottom: 3.2rem;
-  margin-left: 2.4rem;
+display: block;
+margin-bottom: 3.2rem;
+margin-left: 2.4rem;
 }
 .social-links {
-  display: flex;
-  gap: 2.4rem;
-  list-style-type: none;
+display: flex;
+gap: 2.4rem;
+list-style-type: none;
 }
 .social-icon {
-  height: 2.4rem;
-  width: 2.4rem;
-  margin-left: 2.4rem;
+height: 2.4rem;
+width: 2.4rem;
+margin-left: 2.4rem;
 }
 .copyright {
-  font-size: 1.4rem;
-  color: #767676;
-  line-height: 1.6;
-  margin-left: 2.4rem;
-  margin-top: auto;
+font-size: 1.4rem;
+color: #767676;
+line-height: 1.6;
+margin-left: 2.4rem;
+margin-top: auto;
 }
 .contacts {
-  font-style: normal;
-  font-size: 1.6rem;
-  line-height: 1.6;
-  margin-bottom: 1.4rem;
+font-style: normal;
+font-size: 1.6rem;
+line-height: 1.6;
+margin-bottom: 1.4rem;
 }
 .footer-Logo {
-  height: 2.4rem;
+height: 2.4rem;
 }
 .footer-heading {
-  font-weight: 500;
-  font-size: 1.8rem;
-  margin-bottom: 3.2rem;
+font-weight: 500;
+font-size: 1.8rem;
+margin-bottom: 3.2rem;
 }
 .footer-navigation {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 3rem;
 }
 .footer-link:link,
 .footer-link:visited {
-  text-decoration: none;
-  font-size: 1.6rem;
-  color: #767676;
-  transition: all 0.3s;
-  line-height: 1.6;
+text-decoration: none;
+font-size: 1.6rem;
+color: #767676;
+transition: all 0.3s;
+line-height: 1.6;
 }
 .footer-link:hover,
 .footer-link:active {
-  color: #555;
+color: #555;
 }
